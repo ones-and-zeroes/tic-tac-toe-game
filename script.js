@@ -91,6 +91,9 @@ function declareWinner(who) {
         document.querySelector(".endgame").style.display = 'block';
         document.querySelector('.endgame .text').innerText = who;
     }
+    setTimeout(() => {
+        startGame();
+    }, 5000)
 }
 
 function checkTie() {
